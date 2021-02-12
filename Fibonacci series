@@ -1,0 +1,12 @@
+def Fibonacci_series(Num):
+    if(Num == 0):
+        return 0
+    elif(Num == 1):
+        return 1
+    else:
+        return(Fibonacci_series(Num-2)+Fibonacci_series(Num-1))
+
+n = int(input("Enter the range of 'n': "))
+print("Fibonacci Series:")
+for n in range(0, n):
+  print(Fibonacci_series(n))
